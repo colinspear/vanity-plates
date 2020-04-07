@@ -3,7 +3,6 @@ import config
 import numpy as np
 import tweepy
 
-df = pd.read_csv('../data/clean_rejections.csv')
 
 def make_tweet(df):
     # TODO sample without replacement
@@ -27,8 +26,7 @@ def make_tweet(df):
 
     return tweet
 
-def post_tweet(df):
-    tweet = make_tweet(df)
+def post_tweet(tweet):
     # authentication of consumer key and secret 
     auth = tweepy.OAuthHandler(config.consumer_key, config.consumer_secret)
 
