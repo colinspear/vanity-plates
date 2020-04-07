@@ -1,3 +1,10 @@
+#twitter keys
 config.py
+
+#jupyter notebooks
 .ipynb_checkpoints/
+
+#pycache
 __pycache__/
+
+data/
