@@ -1,9 +1,11 @@
 import tweet as t
 
+from pathlib import Path
 import pandas as pd
 
 
-df = pd.read_csv('../data/clean_rejections.csv')
+home = Path().cwd()
+df = pd.read_csv(home / 'data/clean_rejections.csv')
 
 tweet = t.make_tweet(df)
 t.post_tweet(tweet)
