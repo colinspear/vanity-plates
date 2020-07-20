@@ -1,0 +1,25 @@
+# Outline for blog post
+
+
+- Introduction paragraph: what is a cron job? What might you use it for?
+- What is cron tab?
+- Cron tab formatting
+- Quirks
+    - Save an quit or else might not work
+- Make log file
+
+- Okay, that was great. Unfortunately, crontab doesn\'t have a lot of flexibility. 
+- List common use cases where it breaks down
+
+- There are a number of other tools available to fill in the gaps: list
+- Turns out since $YEAR cron uses launchd to run processes anyway 
+
+Launchd
+- Good [overview post](https://beepb00p.xyz/scheduler.html) on scheduling options (say something about cloud options)
+- Really a pretty annoying tool
+- Create plist (xml) file
+- use launchctl from command line to execute
+- Some GUI solutions, [web app](launched.zerowidth.com) - doesn\'t seem to be a useful command line tool that will generate a plist file for you. I used the zerowidth web app
+- [launchd.info](launchd.info) has everything you need to write your plist files and schedule your jobs
+- Definitely a bit of a pain, but not complicated once you get the hang
+  

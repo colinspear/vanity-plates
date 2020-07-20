@@ -7,5 +7,9 @@ config.py
 #pycache
 __pycache__/
 
+#data
 data/
 .DS_store
+
+#static file
+static/
