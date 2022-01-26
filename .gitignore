@@ -13,3 +13,7 @@ data/
 
 #static file
 static/
+
+# log files
+vanity_stdout.log
+vanity_stderror.log
